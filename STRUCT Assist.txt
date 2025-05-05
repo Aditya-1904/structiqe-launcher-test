@@ -1,2 +1,3 @@
 STRUCT Assist is running 
 and this will be changed in the launcher 
+now this also 
