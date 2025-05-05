@@ -1,23 +1,20 @@
 [
   {
     "name": "STRUCT Assist",
-    "version": "1.1.0",
-    "currentVersion": "1.3.0",
-    "buttonLabel": "Install",
-    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/structiqe-launcher-test/main/STRUCT%20Assist.txt"
+    "version": "1.1.0",  // version installed locally
+    "currentVersion": "1.3.0",  // new version available online
+    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/STRUCT-ASSIST-REPO/main/STRUCT%20Assist.txt"
   },
   {
     "name": "CAD Assist",
     "version": "1.1.0",
     "currentVersion": "1.2.0",
-    "buttonLabel": "Launch",
-    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/structiqe-launcher-test/main/CAD%20Assist.txt"
+    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/CAD-ASSIST-REPO/main/CAD%20Assist.txt"
   },
   {
     "name": "PROJECT Assist",
     "version": "1.1.0",
     "currentVersion": "1.2.0",
-    "buttonLabel": "Launch",
-    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/structiqe-launcher-test/main/PROJECT%20Assist.txt"
+    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/PROJECT-ASSIST-REPO/main/PROJECT%20Assist.txt"
   }
 ]
