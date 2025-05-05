@@ -1,0 +1,23 @@
+[
+  {
+    "name": "StructIQe Designer",
+    "version": "1.1.0",
+    "currentVersion": "1.0.0",
+    "buttonLabel": "Update",
+    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/structiqe-launcher-test/main/StructIQe.txt"
+  },
+  {
+    "name": "StructIQe BridgeTool",
+    "version": "1.1.0",
+    "currentVersion": "1.0.0",
+    "buttonLabel": "Update",
+    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/structiqe-launcher-test/main/StructIQe.txt"
+  },
+  {
+    "name": "StructIQe AutoDraft",
+    "version": "1.1.0",
+    "currentVersion": "1.0.0",
+    "buttonLabel": "Update",
+    "downloadUrl": "https://raw.githubusercontent.com/Aditya-1904/structiqe-launcher-test/main/StructIQe.txt"
+  }
+]
