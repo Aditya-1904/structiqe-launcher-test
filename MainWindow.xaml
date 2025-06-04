@@ -1,0 +1,333 @@
+﻿<Window x:Class="structIQe_Application_Manager.Launcher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:structIQe_Application_Manager.Launcher.Converters"
+        FontFamily="Swis721 BT"
+        ResizeMode="NoResize"
+        Height="700" Width="1005"
+        Title="structIQe Application Manager"
+
+        MinWidth="1000" MinHeight="600">
+
+    <Window.Resources>
+        <conv:ActionButtonTextConverter x:Key="ActionText"/>
+        <conv:BoolToVisibilityConverter x:Key="BoolToVis"/>
+        <conv:BoolToOpacityConverter x:Key="BoolToOpacity"/>
+
+    </Window.Resources>
+
+    <Grid Background="#EEE">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Top Bar -->
+
+            <RowDefinition Height="*"/>
+            <!-- Main Content -->
+            <RowDefinition Height="Auto"/>
+            <!-- Bottom Bar -->
+        </Grid.RowDefinitions>
+
+        <!-- Top Bar (full width) -->
+        <Grid Grid.Row="0" Background="#EEE" Height="100">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Logo and Title -->
+            <StackPanel Grid.Column="0" Orientation="Vertical" VerticalAlignment="Center" Margin="24,0,12,0">
+                <TextBlock VerticalAlignment="Top" FontSize="28" FontWeight="Bold" >
+                  <!--  struct<Run Text="IQ" Foreground="Red" FontStyle="Italic"/>e --> Application Manager
+                </TextBlock>
+                <StackPanel>
+                    <TextBlock Text="Version 1.1.0"  />
+                    <TextBlock Text="Copyright © 2025" />
+                    <TextBlock Text="structIQe Technologies Pvt Ltd" />
+                    
+
+                </StackPanel>
+            </StackPanel>
+
+            <!-- Empty space (flex grow) -->
+            <StackPanel Grid.Column="1"/>
+
+            <!-- Top-right Buttons -->
+            <StackPanel Grid.Column="2" Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,24,0">
+                <Button Content="Request/Update License" Click="ReqUpdateLicense" Background="#ffffff" Height="25" Width="145" Margin="10,0" Cursor="Hand"/>
+                <Button Content="Apply License" Click="ApplyLicense" Background="#ffffff"  Height="25" Width="120" Margin="10,0" Cursor="Hand"/>
+            <!--    <Button Height="20" Width="30" Margin="6" Cursor="Hand" Background="white">
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <TextBlock FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE13d;"
+                           FontSize="16"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,0"/>
+                        <TextBlock Text="" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>
+                <Button Height="20" Width="30" Margin="6" Cursor="Hand" Background="white">
+                    <StackPanel Orientation="Horizontal">
+                        
+                        <TextBlock FontFamily="Segoe MDL2 Assets"
+                           Text="&#xE12a;"
+                           FontSize="16"
+                           VerticalAlignment="Center"
+                           Margin="0,0,0,0"/>
+                        <TextBlock Text="" VerticalAlignment="Center"/>
+                    </StackPanel>
+                </Button>  -->
+
+            </StackPanel>
+        </Grid>
+
+        <!-- Main Content -->
+        <Grid MinWidth="150" Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="24"/>
+                <ColumnDefinition Width="220"/>
+                <ColumnDefinition Width="24"/>
+                <!-- Branding panel -->
+                <ColumnDefinition/>
+                <!-- App list -->
+            </Grid.ColumnDefinitions>
+
+            <!-- Branding Vertical Image -->
+            <Border Grid.Column="1" Background="#EEE" BorderThickness="1" BorderBrush="#ddd">
+                <Image Source="/Images/Vertical_image.png"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Stretch="Fill"
+                       Margin="0,0,0,0"/>
+            </Border>
+
+            <!-- App List/Table -->
+            <ListView x:Name="AppsListView"
+                      Grid.Column="3"
+                      BorderBrush="#ddd"
+                      ItemsSource="{Binding}" Margin="0,0,24,0" SelectionMode="Single">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="Margin" Value="0,8"/>
+                        <Setter Property="Padding" Value="6"/>
+                        <Setter Property="BorderThickness" Value="0"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        <Setter Property="VerticalContentAlignment" Value="Top"/>
+                        <Setter Property="Background" Value="Transparent"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+
+                        
+                    </Style>
+                </ListView.ItemContainerStyle>
+
+                <ListView.View>
+                    <GridView>
+                        <!-- Name Column -->
+                        <GridViewColumn Header="Name" >
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <StackPanel>    
+                                    <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="15"/>
+                                        <ItemsControl ItemsSource="{Binding Modules}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    
+                                                    <TextBlock Text="{Binding}" 
+                                                       FontSize="11" 
+                                                       Foreground="#666" 
+                                                       Margin="10,0,0,0"/>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
+                                    </StackPanel>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!-- Current Version -->
+                        <GridViewColumn Header="Current Version">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding InstalledVersion, TargetNullValue='Not Installed'}"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               TextAlignment="Center"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <!-- Action -->
+                        
+                        <GridViewColumn Header="Action">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid Opacity="{Binding IsLicensed, Converter={StaticResource BoolToOpacity}}"
+                  IsHitTestVisible="{Binding IsLicensed}">
+                                      <!--  <Grid.ToolTip>
+                                            <TextBlock Text="Please activate your license to use this feature."/>
+                                        </Grid.ToolTip> -->
+                                        <StackPanel>
+                                            <Button Content="{Binding ., Converter={StaticResource ActionText}}" 
+        IsEnabled="{Binding CanInstallLicensed, Mode=OneWay}"
+        Click="OnAppActionClick"
+        Tag="{Binding Id}"
+        Height="30"
+        Cursor="Hand">
+                                                <Button.Style>
+                                                    <Style TargetType="Button">
+                                                        <Setter Property="Background" Value="#F5FAFF"/>
+                                                        <Setter Property="Foreground" Value="#1967D2"/>
+                                                        <!-- Default Blue -->
+
+                                                        <Style.Triggers>
+                                                            <!-- If IsInstalled == true and IsUpdateAvailable == false, it's just Installed -->
+                                                            <DataTrigger Binding="{Binding IsInstalled}" Value="True">
+                                                                <Setter Property="Foreground" Value="#666666"/>
+                                                                <!-- Dark Gray -->
+                                                            </DataTrigger>
+
+                                                            <DataTrigger Binding="{Binding IsUpdateAvailable}" Value="True">
+                                                                <Setter Property="Foreground" Value="#1967D2"/>
+                                                                <!-- Reset to blue if update is available -->
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </Button.Style>
+                                            </Button>
+
+                                            <StackPanel Margin="0,2,0,0">
+                                                <TextBlock Text="{Binding LatestVersion, StringFormat=Available Version: {0}}"
+           FontSize="10" Foreground="Gray">
+                                                    <TextBlock.Style>
+                                                        <Style TargetType="TextBlock">
+                                                            <Setter Property="Visibility" Value="Collapsed"/>
+                                                            <Style.Triggers>
+                                                                <MultiDataTrigger>
+                                                                    <MultiDataTrigger.Conditions>
+                                                                        <Condition Binding="{Binding IsInstalled}" Value="False"/>
+                                                                    </MultiDataTrigger.Conditions>
+                                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                                </MultiDataTrigger>
+
+                                                                <DataTrigger Binding="{Binding IsUpdateAvailable}" Value="True">
+                                                                    <Setter Property="Visibility" Value="Visible"/>
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </TextBlock.Style>
+                                                </TextBlock>
+
+
+
+                                            </StackPanel>
+                                            <StackPanel Margin="0,2,0,0">
+                                                <StackPanel.Style>
+                                                    <Style TargetType="StackPanel">
+                                                        <Setter Property="Visibility" Value="Collapsed"/>
+                                                        <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding IsUpdateAvailable}" Value="True">
+                                                                <Setter Property="Visibility" Value="Visible"/>
+                                                            </DataTrigger>
+                                                        </Style.Triggers>
+                                                    </Style>
+                                                </StackPanel.Style>
+                                                
+                                                 <TextBlock Text="{Binding ReleaseNotes}" 
+                                                             FontSize="10" Foreground="#666" TextWrapping="Wrap" MaxWidth="220"/>
+                                            </StackPanel>
+                                        </StackPanel>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <!-- Uninstall -->
+                        <!-- Uninstall -->
+                        <GridViewColumn Header="Uninstall">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid Opacity="{Binding IsLicensed, Converter={StaticResource BoolToOpacity}}"
+      IsHitTestVisible="{Binding IsLicensed}"
+      VerticalAlignment="Top">
+
+                                        <Button Content="Uninstall"
+                                                VerticalAlignment="Top"
+                                                Click="OnUninstallClick"
+                                                Tag="{Binding Id}"
+                                                IsEnabled="{Binding IsInstalled}"
+                                                Background="#ffffff"
+                                                Height="30"
+                                                Padding="8,0"
+                                                Cursor="Hand">
+                                            <Button.Style>
+                                                <Style TargetType="Button">
+                                                    <Setter Property="Foreground" Value="Red"/>
+                                                    <Style.Triggers>
+                                                        <Trigger Property="IsEnabled" Value="False">
+                                                            <Setter Property="Foreground" Value="Gray"/>
+                                                        </Trigger>
+                                                    </Style.Triggers>
+                                                </Style>
+                                            </Button.Style>
+                                        </Button>
+
+                                    </Grid>
+
+
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
+
+        <!-- Bottom Bar -->
+        <DockPanel Grid.Row="2" LastChildFill="False" Height="54" Background="#EEE">
+            <Button x:Name="UninstallAllButton"
+        Content="Uninstall All"
+        Width="140"
+        Height="30"
+        Margin="24,8,0,8"
+        DockPanel.Dock="Left"
+        Background="#ffffff"
+        Click="OnUninstallAllClick">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="Foreground" Value="Red"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter Property="Foreground" Value="Gray"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+            <Button Content="Close"
+                    
+                    Width="100"
+                    Height="30"
+                    Margin="0,8,24,8"
+                    DockPanel.Dock="Right"
+                    Background="#ffffff"
+                    Foreground="Red"
+                    
+                    Click="CloseButton_Click"/>
+        </DockPanel>
+
+        <!-- LOADING OVERLAY -->
+        <Border x:Name="LoadingOverlay"
+                Background="#AAFFFFFF"
+                Visibility="Collapsed"
+                CornerRadius="12"
+                Grid.RowSpan="3"
+                Margin="0"
+                Panel.ZIndex="999">
+            <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <ProgressBar IsIndeterminate="True" Width="200" Height="24" Margin="0,0,0,16"/>
+                <TextBlock Text="Checking for the latest updates..." FontSize="16" FontWeight="SemiBold" HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<Product Id="*"
+			 Name="structIQe Application Manager"
+			 Language="1033"
+			 Version="1.0.0.0"
+			 Manufacturer="structIQe"
+			 UpgradeCode="{A1234567-89AB-CDEF-0123-456789ABCDEF}">
+
+		<Package InstallerVersion="500" Compressed="yes" InstallScope="perMachine" />
+		<MajorUpgrade DowngradeErrorMessage="A newer version is already installed." />
+		<MediaTemplate />
+
+		<!-- Launch app after install -->
+		<CustomAction Id="LaunchApp"
+					  FileKey="AppExe"
+					  ExeCommand=""
+					  Return="asyncNoWait"
+					  Impersonate="no" />
+		<InstallExecuteSequence>
+			<Custom Action="LaunchApp" After="InstallFinalize">NOT Installed</Custom>
+		</InstallExecuteSequence>
+
+		<Feature Id="ProductFeature" Title="Application Files" Level="1">
+			<ComponentRef Id="AppExe" />
+			<ComponentRef Id="AppDll" />
+			<ComponentRef Id="AppDeps" />
+			<ComponentRef Id="AppRuntimeConfig" />
+			<ComponentRef Id="AppPdb" />
+			<ComponentRef Id="HASPNet" />
+			<ComponentRef Id="HASPx86" />
+			<ComponentRef Id="HASPx64" />
+			<ComponentRef Id="HASPApi_x86" />
+			<ComponentRef Id="HASPApi_x64" />
+			<ComponentRef Id="HASPvlib" />
+		</Feature>
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="structIQe" Name="structIQe">
+					<Directory Id="INSTALLFOLDER" Name="Application Manager" />
+				</Directory>
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<DirectoryRef Id="INSTALLFOLDER">
+			<Component Id="AppExe" Guid="{16933E1A-4448-4014-8A01-0D3232BDFD71}">
+				<File Id="AppExe"
+					  Source="$(var.structIQeInstallerTargetDir)\structIQe Application Manager.exe"
+					  KeyPath="yes" />
+			</Component>
+
+			<Component Id="AppDll" Guid="{B121E2A0-C9BA-4E7E-BAC2-DC46E8B8F100}">
+				<File Source="$(var.structIQeInstallerTargetDir)\structIQe Application Manager.dll" />
+			</Component>
+
+			<Component Id="AppDeps" Guid="{84C47BD2-9E41-48A1-BE88-9D109F6FAEAC}">
+				<File Source="$(var.structIQeInstallerTargetDir)\structIQe Application Manager.deps.json" />
+			</Component>
+
+			<Component Id="AppRuntimeConfig" Guid="{A7B2061B-6C0B-496F-BEDA-63D8F93DDE22}">
+				<File Source="$(var.structIQeInstallerTargetDir)\structIQe Application Manager.runtimeconfig.json" />
+			</Component>
+
+			<Component Id="AppPdb" Guid="{CF1ED16E-4DC2-4F9E-B6A9-84498B89D321}">
+				<File Source="$(var.structIQeInstallerTargetDir)\structIQe Application Manager.pdb" />
+			</Component>
+
+			<Component Id="HASPNet" Guid="{3CFAEFD3-7BB3-4F52-B155-2E94895A2B7E}">
+				<File Source="$(var.structIQeInstallerTargetDir)\hasp_net_windows.dll" />
+			</Component>
+
+			<Component Id="HASPx86" Guid="{65B3A4F6-EC8E-4B2C-A1A6-C7BA38B683AD}">
+				<File Source="$(var.structIQeInstallerTargetDir)\hasp_windows_106406.dll" />
+			</Component>
+
+			<Component Id="HASPx64" Guid="{1EBD9B4F-9C57-49D2-A5B2-CB6EF0BD1103}">
+				<File Source="$(var.structIQeInstallerTargetDir)\hasp_windows_x64_106406.dll" />
+			</Component>
+
+			<Component Id="HASPApi_x86" Guid="{4C7D7D1E-83B1-4F20-B38F-C403F0E5E8FC}">
+				<File Source="$(var.structIQeInstallerTargetDir)\apidsp_windows.dll" />
+			</Component>
+
+			<Component Id="HASPApi_x64" Guid="{8E5E4F5A-9D92-40B2-83EC-AD09F42041DE}">
+				<File Source="$(var.structIQeInstallerTargetDir)\apidsp_windows_x64.dll" />
+			</Component>
+
+			<Component Id="HASPvlib" Guid="{6EF67C48-7F90-43D0-938B-EEAD75F8B4C6}">
+				<File Source="$(var.structIQeInstallerTargetDir)\haspvlib_106406.dll" />
+			</Component>
+		</DirectoryRef>
+	</Fragment>
+
+</Wix>

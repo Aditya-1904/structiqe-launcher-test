@@ -1,0 +1,11 @@
+C:\github-workspace\Setup-Files-Application-Manager\structIQe Application Manager.exe
+C:\github-workspace\Setup-Files-Application-Manager\apidsp_windows.dll
+C:\github-workspace\Setup-Files-Application-Manager\apidsp_windows_x64.dll
+C:\github-workspace\Setup-Files-Application-Manager\haspvlib_106406.dll
+C:\github-workspace\Setup-Files-Application-Manager\hasp_windows_106406.dll
+C:\github-workspace\Setup-Files-Application-Manager\hasp_windows_x64_106406.dll
+C:\github-workspace\Setup-Files-Application-Manager\structIQe Application Manager.dll
+C:\github-workspace\Setup-Files-Application-Manager\structIQe Application Manager.deps.json
+C:\github-workspace\Setup-Files-Application-Manager\structIQe Application Manager.runtimeconfig.json
+C:\github-workspace\Setup-Files-Application-Manager\structIQe Application Manager.pdb
+C:\github-workspace\Setup-Files-Application-Manager\hasp_net_windows.dll

@@ -1,2 +1,0 @@
-# structiqe-launcher-test
-

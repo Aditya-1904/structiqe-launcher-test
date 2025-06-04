@@ -1,0 +1,54 @@
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\MainWindow.g.cs
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\App.g.cs
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher_Content.g.cs
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher_MarkupCompile.cache
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher_MarkupCompile.lref
+C:\structIQe Launcher\StructIQe.Launcher - R\bin\Debug\net8.0-windows7.0\StructIQe.Launcher.exe
+C:\structIQe Launcher\StructIQe.Launcher - R\bin\Debug\net8.0-windows7.0\StructIQe.Launcher.deps.json
+C:\structIQe Launcher\StructIQe.Launcher - R\bin\Debug\net8.0-windows7.0\StructIQe.Launcher.runtimeconfig.json
+C:\structIQe Launcher\StructIQe.Launcher - R\bin\Debug\net8.0-windows7.0\StructIQe.Launcher.dll
+C:\structIQe Launcher\StructIQe.Launcher - R\bin\Debug\net8.0-windows7.0\StructIQe.Launcher.pdb
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\MainWindow.baml
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.g.resources
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.AssemblyInfoInputs.cache
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.AssemblyInfo.cs
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.csproj.CoreCompileInputs.cache
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.dll
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\refint\StructIQe.Launcher.dll
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.pdb
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.genruntimeconfig.cache
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\ref\StructIQe.Launcher.dll
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.csproj.AssemblyReference.cache
+C:\structIQe Launcher\StructIQe.Launcher - R\obj\Debug\net8.0-windows7.0\StructIQ.84D953BA.Up2Date
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\apidsp_windows.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\apidsp_windows_x64.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\haspvlib_106406.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\hasp_windows_106406.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\hasp_windows_x64_106406.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.exe
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.deps.json
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.runtimeconfig.json
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.pdb
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.csproj.AssemblyReference.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\MainWindow.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\App.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager_Content.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager_MarkupCompile.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager_MarkupCompile.lref
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\MainWindow.baml
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.g.resources
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.GeneratedMSBuildEditorConfig.editorconfig
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.AssemblyInfoInputs.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.AssemblyInfo.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.csproj.CoreCompileInputs.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.sourcelink.json
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQ.84D953BA.Up2Date
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.dll
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\refint\structIQe Application Manager.dll
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.pdb
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\StructIQe.Launcher.genruntimeconfig.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\ref\structIQe Application Manager.dll

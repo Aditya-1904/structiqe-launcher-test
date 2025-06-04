@@ -1,0 +1,5 @@
+C:\structIQe Launcher\StructIQe.Launcher\bin\Release\net8.0-windows\publish\StructIQe.Launcher.exe
+C:\structIQe Launcher\StructIQe.Launcher\bin\Release\net8.0-windows\publish\StructIQe.Launcher.dll
+C:\structIQe Launcher\StructIQe.Launcher\bin\Release\net8.0-windows\publish\StructIQe.Launcher.deps.json
+C:\structIQe Launcher\StructIQe.Launcher\bin\Release\net8.0-windows\publish\StructIQe.Launcher.runtimeconfig.json
+C:\structIQe Launcher\StructIQe.Launcher\bin\Release\net8.0-windows\publish\StructIQe.Launcher.pdb

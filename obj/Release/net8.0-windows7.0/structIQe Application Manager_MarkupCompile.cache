@@ -1,0 +1,20 @@
+﻿structIQe Application Manager
+
+
+winexe
+C#
+.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Release\net8.0-windows7.0\
+structIQe_Application_Manager
+none
+false
+TRACE;RELEASE;NET;NET8_0;NETCOREAPP
+C:\github-workspace\structIQe-Application-Manager\App.xaml
+2-665699619
+11477272243
+10885635526
+2001685942914
+LoadingWindow.xaml;MainWindow.xaml;
+
+False
+

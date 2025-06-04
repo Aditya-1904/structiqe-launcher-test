@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "structIQe Application Manager/1.0.0": {
+        "dependencies": {
+          "hasp_net_windows": "10.0.42941.60001"
+        },
+        "runtime": {
+          "structIQe Application Manager.dll": {}
+        }
+      },
+      "hasp_net_windows/10.0.42941.60001": {
+        "runtime": {
+          "hasp_net_windows.dll": {
+            "assemblyVersion": "10.0.42941.60001",
+            "fileVersion": "10.0.42941.60001"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "structIQe Application Manager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "hasp_net_windows/10.0.42941.60001": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

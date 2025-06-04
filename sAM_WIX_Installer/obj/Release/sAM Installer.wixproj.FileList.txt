@@ -1,0 +1,2 @@
+C:\github-workspace\structIQe-Application-Manager\sAM Installer\bin\Release\cab1.cab
+obj\Release\Product.wixobj

@@ -1,0 +1,35 @@
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\apidsp_windows.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\apidsp_windows_x64.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\haspvlib_106406.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\hasp_windows_106406.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\hasp_windows_x64_106406.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.exe
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.deps.json
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.runtimeconfig.json
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.dll
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\structIQe Application Manager.pdb
+C:\github-workspace\structIQe-Application-Manager\bin\Debug\net8.0-windows7.0\hasp_net_windows.dll
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.csproj.AssemblyReference.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\Interop.Microsoft.Office.Interop.Outlook.dll
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.csproj.ResolveComReference.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\LoadingWindow.baml
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\LoadingWindow.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\MainWindow.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\App.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager_Content.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\GeneratedInternalTypeHelper.g.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager_MarkupCompile.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager_MarkupCompile.lref
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\MainWindow.baml
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.g.resources
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.GeneratedMSBuildEditorConfig.editorconfig
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.AssemblyInfoInputs.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.AssemblyInfo.cs
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.csproj.CoreCompileInputs.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.sourcelink.json
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQ.28014B14.Up2Date
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.dll
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\refint\structIQe Application Manager.dll
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.pdb
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\structIQe Application Manager.genruntimeconfig.cache
+C:\github-workspace\structIQe-Application-Manager\obj\Debug\net8.0-windows7.0\ref\structIQe Application Manager.dll
